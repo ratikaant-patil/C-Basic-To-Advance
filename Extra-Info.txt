@@ -1,0 +1,9 @@
+// This is biolerPlate code
+// Which We are going to use in all programs
+
+#include <iostream>
+using namespace std;
+int main(){
+
+    return 0;
+}

@@ -1,0 +1,40 @@
+//  In Cpp Their Are 3 Types Of DATA Types
+//  1. Built-In :-
+//     int - it stores integer values like 1, 2343, 3424365
+//     float - it stores decimal of low precision like 1.43 , 1.43 , 254.32
+//     char - it stores charcters like a , b , z ,x
+//     double -it stores decimal of high precision like 1.4332 , 1.43234 , 254.32324
+//     bool - it stores true and false values
+
+//  2. User-defined :-
+//     Struct -
+//     Union -
+//     Enum -
+
+//  3. Derived :-
+//     Array -
+//     Functions -
+//     Pointers -
+
+
+// Type Casting 
+   - Type Casting Means Converting data from one type to another
+   - Their are two types of castings
+     1] Type Conversion
+        - Coversion is implicit ( implicit means we dont have to do anything compiler will do it automatically )
+        - Conversion is used when we have to convert values from small type to large type
+        - Because in this their is no data loss because we are going from small to big values
+        // Example :-
+            char grader = 'A';
+            int value = grade;
+            cout<<value<<endl; // we will get 97 value because it conversion value from char to int which was char is small and int was big
+            // as you see output is 97 because it coverting char value into ASCII values
+     
+     2] Type Casting
+        - Coversion is Explicit ( implicit means programmer have to do it manually )
+        - Casting is used when we have to convert values from large type to small type
+        // Example :-
+            double price = 100.99
+            int newPrice = (int)price;
+            cout<<newPrice<<endl; // Output was 100 because when converting to int our float values are lost
+            
