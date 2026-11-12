@@ -1,0 +1,27 @@
+// Conditional statements help a program decide which block of code to execute depending on a condition.
+
+Their are three types of it 
+1] if :-
+
+    if(condition){
+        //code
+    }
+
+2] if-else :-
+    if(condition){
+        //code
+    }else{
+        //code
+    }
+
+3] nested if-else :-
+
+    if(condition){
+        //code
+    }else if{
+        //code
+    }else if{
+        //code
+    }else{
+
+    }

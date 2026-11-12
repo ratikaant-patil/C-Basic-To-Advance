@@ -1,0 +1,37 @@
+// ===================== Binary Operator ========================================
+
+// Operators are special symbols used to perform operations on variables and values.
+
+Their are multiple types of Operators
+
+1] Arithmatic Operators
+    + = for addition of two number
+    - = for substraction of two number
+    * = for multiplication of two number
+    / = for division of numbers
+    % = for modulo of number ( basically it is reminder when we divide by anything )
+
+2] Relational Operators 
+    <  = Less than
+    <= = less than equal to
+    >  = greather than
+    >= = greather than equal to
+    == = equal to
+    != = Not equal to
+
+3] Logical Operators
+    OR = to check from both one codition should become true
+    && = to check both codition should become true
+    !  = to convert condition true to false or false condition to true
+
+
+// ============================= Unary Operators =================================
+
+1] Increment ++ = value Increment by 1
+2] Decrement -- = value Decrement by 1
+
+Their are two types of this 
+1] Post which means it will give output when next time we call it
+    a++; // we will get +1 value next time when we call it 
+2] Pre which means it will give output in current execution
+    ++a; // we will get +1 value in current execution 

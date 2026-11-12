@@ -1,24 +1,9 @@
-//  In Cpp Their Are 3 Types Of DATA Types
-//  1. Built-In :-
-//     int - it stores integer values like 1, 2343, 3424365
-//     float - it stores decimal of low precision like 1.43 , 1.43 , 254.32
-//     char - it stores charcters like a , b , z ,x
-//     double -it stores decimal of high precision like 1.4332 , 1.43234 , 254.32324
-//     bool - it stores true and false values
 
-//  2. User-defined :-
-//     Struct -
-//     Union -
-//     Enum -
-
-//  3. Derived :-
-//     Array -
-//     Functions -
-//     Pointers -
 
 #include <iostream>
 using namespace std;
 int main(){
+
     int integer_1=55 , integer_2=21345;
     float float_1=432.54 , float_2=23.43;
     char char_1 = 'a' , char_2 = 'b';
@@ -35,6 +20,14 @@ int main(){
     cout<<" & it uses 8 bytes of memory"<< endl;
     cout<<"5. bool datatype are like "<< bool_1 << " , " << bool_2 ;
     cout<<" & it uses 1 bytes of memory"<< endl;
+
+    // 1] Type Conversion
+    int typeConversion = char_1;
+    cout << "We are converting char value to int :" << typeConversion << endl;
+
+    // 2] Type Casting
+    int typeCasting = (int)double_1; // For type casting you need to define datatype on own when we go from large datatype to small datatype
+    cout << "We are converting double value to int :" << typeCasting;
 
     return 0;
 }
