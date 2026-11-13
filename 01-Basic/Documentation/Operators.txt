@@ -35,3 +35,12 @@ Their are two types of this
     a++; // we will get +1 value next time when we call it 
 2] Pre which means it will give output in current execution
     ++a; // we will get +1 value in current execution 
+
+
+// ============================= Ternary Operator ==================================
+
+Ternary Operator is used to get true or false value in one line
+like ,
+
+int ans = if(10>=0) ? 1 : 0;
+if condition is true then next part of ? is executed Else : next part get executed

@@ -47,6 +47,15 @@ int main(){
     cout << "++ = used to increment variable by 1 " << (++a) << endl;
     cout << "-- = used to decrement variable by 1 " << (--b) << endl;
 
+
+    cout << "***** Ternary Operators ******" << endl ;
+    cout << endl ;
+
+    cout << " (condition) ? true : false; it is used to response in one line " << endl;
+    cout << " If condition is true then True part executes if not then else condition get executed" << endl ;
+
+    cout << (10>0 ? "Yes 10 is greather than 0" : "No 10 is smaller than 0") << endl;
+
     return 0;
 }
 
