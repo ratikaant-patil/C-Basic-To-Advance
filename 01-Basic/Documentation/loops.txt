@@ -1,0 +1,18 @@
+Loops Or Looping Statements Meanings executing a block of code until condition get false
+
+Their are total 3 types of looping statements 
+
+1] While
+2] Do-While
+3] for
+
+1] While :-
+    While loop is used for executing a block of code until condition not get false 
+    Example :-
+
+        int i = 10;
+        while (i>1){
+            // code
+            // Increment Or Decrement Of variables
+        }
+

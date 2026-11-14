@@ -22,6 +22,7 @@ int main(){
 
     for(from ; from <= to ; from++){
         cout<<from << " ";
+        cout<<from << " ";
     }
 
     return 0;
