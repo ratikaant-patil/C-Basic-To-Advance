@@ -71,6 +71,8 @@ int main(){
     cout << endl;
     cout << "Print Factorial of number N" << endl;
 
+    cout << endl;
+
     num = 5;
     count = 1;
     for(int i=1 ; i<=num ; i++){
