@@ -55,3 +55,10 @@ Their are total 3 types of looping statements
                 // Code
             }
         }
+    
+    Exapmle :-
+        for(int i=1 ; i <= 10 ; i++){
+            for(int j=1 ; i<=i ; j++){
+                // Code
+            }
+        }
