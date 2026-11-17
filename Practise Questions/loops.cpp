@@ -80,6 +80,7 @@ int main(){
             cout << count << endl;
     }
     cout << "Factorial of number N is " << count << endl;
+    cout << "Factorial of number N is " << count << endl;
 
 
     return 0;
