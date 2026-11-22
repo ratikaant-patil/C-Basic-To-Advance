@@ -49,10 +49,26 @@ int primeNumber(int n){
     return count == 2 ;
 }
 
-int primeNumberToN(int n){
-    
+void primeNumberToN(int n){
+    for(int i=1; i<=n ; i++){
+        if(primeNumber(i)){
+            cout << i << " is Prime Number\n";
+        }
+    }
+    return;
 }
 
+int fibonacciSeries(int n){
+    int a = 0;
+    int b = 1;
+    int ans = 0;
+    for(int i=2 ; i<=n ; i++){
+        ans = a + b;
+        a = b;
+        b = ans;
+    }
+    return ans;
+}
 
 
 int main(){
@@ -79,7 +95,11 @@ int main(){
     cout << "Prime number is = " << primeNumber(6) << endl;
 
     // Print all prime numbers from 1 to n
-    cout << "Prime number is = " << primeNumberToN(6) << endl;
+    primeNumberToN(6);
+    // cout << "Prime numbers Are = " << primeNumberToN(6) << endl;
+
+    // Print Fibonacci Series
+    cout << "Fibonacci number is = " << fibonacciSeries(6) << endl;
 
     return 0;
 }
