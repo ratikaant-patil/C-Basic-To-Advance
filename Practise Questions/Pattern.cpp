@@ -40,6 +40,8 @@ int main(){
 // 1 2 3
 // 4 5 6
 // 7 8 9
+
+    cout << "Third Pattern" << endl;
     n=3;
     int val = 1;
     for(int i=0; i<n ; i++){
@@ -57,11 +59,49 @@ int main(){
 // * *
 // * * *
 // * * * *
-    n = 4;
+    cout << "Fourth Pattern" << endl;
+    n = 10;
     for(int i = 1 ; i<=n ; i++){
         for(int j = 1 ; j <=i ; j++){
             cout << "* ";
         }
+        cout << endl;
+    }
+    cout << endl;
+
+
+// Fifth Pattern
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+
+    cout << "Fifth Pattern" << endl;
+    n = 4;
+    for(int i = 1 ; i<=n ; i++){
+        for(int j = 1 ; j <=i ; j++){
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+
+// Sixth Pattern
+// A
+// B B
+// C C C
+// D D D D
+// E E E E E
+
+    cout << "Sixth Pattern" << endl;
+    n= 5;
+    char chr = 'A';
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout << chr << " ";
+        }
+        chr += 1;
         cout << endl;
     }
 
