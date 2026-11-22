@@ -1,0 +1,73 @@
+# Function are basically a block of command or code which is resuable in whole program
+ so we dont have to write that command or code again and again we just call that functions
+ and works will get done .
+
+# You can also call functions as helpers who assigned a specific task when we have to do
+  that task we call them 
+
+Syntax :-
+
+    returnType functionName(parameters){
+        // Block Of Code
+    }
+
+# The which which not return any values its returnType is ( void )
+
+// Example Of Void Function
+void printHello(){
+    cout << "Hello";
+}
+
+int main(){
+    // We use this to call an function
+    printHello();
+    return 0;
+}
+
+# Function With Return values
+
+// Example of function value returning Type
+// int value return Type
+
+int intValueReturn(){
+    // if you want to apply logic apply here
+    return 15; // Or we can send any values like sum = 2 + 2 + 2 + 2 then return sum
+}
+
+int main(){
+
+    // It is calling the function but you want to show returning value or store it
+    int returningValue = intValueReturn();
+    cout << "val = " << returningValue << endl;
+
+    // You can directly shows the value like
+    cout << "val = " << intValueReturn() << endl;
+
+    return 0;
+}
+
+
+# Function With parameters and return Type
+
+// Example of function with parameters and return Values
+// int parameters and int return Type
+
+// Function With Parameters
+int functionWithParameter(int a , int b){
+    // Any Operations
+    return a + b;
+}
+
+int main(){
+
+    // Function With Parameter
+    // Here How We Can share values to them
+    cout << "Ans = " << functionWithParameter(5,5) << endl;
+
+    // We Can Also Pass Variables To them
+    int a = 10 , b = 10;
+    int returnValue = functionWithParameter(a,b);
+    cout << "Return Value is = " << returnValue;
+
+    return 0;
+}
