@@ -104,6 +104,112 @@ int main(){
         chr += 1;
         cout << endl;
     }
+    cout << endl;
+
+// Seventh Pattern
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+
+    cout << "Seventh Pattern" << endl;
+    n= 4;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+
+// Eight Pattern
+// 1
+// 2 1
+// 3 2 1
+// 4 3 2 1
+
+    cout << "Eight Pattern" << endl;
+    n= 4;
+    for(int i=1;i<=n;i++){
+        for(int j=i;j>0;j--){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+
+// Ninth Pattern
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+    
+    cout << "Ninth Pattern" << endl;
+    n= 4;
+    int num = 1;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout << num << " ";
+            num +=1;
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+
+// Tenth Pattern
+// 1 1 1 1
+//   2 2 2
+//     3 3
+//       4
+    
+    cout << "Tenth Pattern" << endl;
+    n= 4;
+    for(int i=1;i<=n;i++){
+
+        for(int k=1; k<i;k++){
+            cout << "  ";    
+        }
+
+        for(int j=n;j>=i;j--){
+            cout << i << " ";
+        }
+       
+        cout << endl;
+    }
+    cout << endl;
+
+
+
+// Eleventh Pattern
+// Pyramid Pattern
+//      1   
+//    1 2 1
+//  1 2 3 2 1
+//1 2 3 4 3 2 1
+    
+    cout << "Eleventh Pattern" << endl;
+    n = 4;
+    for(int i=1; i<=n ; i++){
+        for(int k=i; k<n ; k++){
+        cout << " " << " ";
+        }
+
+        for(int j=1; j<=i ; j++){
+        cout << j << " ";
+        }
+
+        for(int j=i-1; j>0 ; j--){
+        cout << j << " ";
+        }
+
+      
+        cout << endl;
+    }
+    
+
 
     return 0;
 }
