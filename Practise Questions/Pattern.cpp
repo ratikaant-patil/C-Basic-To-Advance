@@ -191,7 +191,7 @@ int main(){
 //1 2 3 4 3 2 1
     
     cout << "Eleventh Pattern" << endl;
-    n = 4;
+    n = 10;
     for(int i=1; i<=n ; i++){
         for(int k=i; k<n ; k++){
         cout << " " << " ";
@@ -208,6 +208,62 @@ int main(){
       
         cout << endl;
     }
+    
+
+
+// Tweleve Pattern
+// Hollow Diamond Pattern
+//          *   
+//        *   *
+//      *       * 
+//    *           *
+//      *        *
+//        *    *
+//           *
+//  1 2 3 2 1
+//1 2 3 4 3 2 1
+    
+   n = 4;
+
+   // Top
+   for(int i=0 ; i<n; i++){
+    //Spaces
+    for(int j=0; j<n-i-1; j++){
+        cout << " ";
+    }
+
+    cout << "*";
+
+    if(i != 0){
+        //Spaces
+        for(int j=0; j<2*i-1; j++){ // j<2*i-1 is used for to get odd number
+            cout << " ";
+        }
+
+        cout << "*";
+    }
+    cout << endl;
+   }
+
+
+   // Outer
+   for (int i=0; i<n-1; i++){
+    // Spaces
+    for(int j=0; j<i+1; j++){
+        cout << " ";
+    }
+
+    cout << "*";
+    if(i != n-2){
+        // Spaces
+        for(int j=0; j<2*(n-i)-5; j++){
+        cout << " ";
+        }
+        cout << "*";
+    }
+    cout << endl;
+   }
+   
     
 
 
