@@ -1,0 +1,70 @@
+# Decimal Numbers are numbers from 0 to 9
+# and binary numbers collection of 0 & 1
+
+// To Convert Decimal to Binary 
+1. We need to repeated division with 2 until values get 0
+
+// This is how calculation looks like 
+// Suppose number is 50 then,
+// We take its division to store into a variable which give us our binary values
+// Then again we take reminder and once again division it by 2
+// Until values get 0 , We repeat this process
+
+// Here is example how it looks
+
+ 50 % 2 = 0 so Quotient is 25
+ 25 % 2 = 1 so Quotient is 12
+ 12 % 2 = 0 so Quotient is 6
+  6 % 2 = 0 so Quotient is 3
+  3 % 2 = 1 so Quotient is 1 
+  1 % 2 = 1 so Quotient is 0
+
+// So our final binary value should look like ( 110010 )
+// But in this you can see value start are like 0 , 1 , 0 , 0 , 1 , 1
+// Then we should add it into a variable in reverse order
+
+// ( / ) = Gives You How many times can you divide ?
+// ( % ) = What's left after dividing ?
+
+// In my words Quotient ( / ) means kitini bhag gelya
+// In my words Division ( % ) means kiti rahilya
+
+// Now here as you see we need to store values in reverse order stright order
+// If we want to store values in stright order what we can do multiple the ans * 10 and add adding values
+// It should look like ans = (ans * 10) + value // It should add our values like val1,val2,val3 (123)
+// it not add values into ans it place into ans like shown
+// suppose their are three values 1,3,9 using ans = (ans * 10) + val // it would look like 139
+
+// So here we need to add it in reverse order so we have to do it like
+// multiple the value with 10 power 0 so it get place at last
+// then for second value multiple the value with 10 with power of 1 so it get placed at second last
+// then again for third value multiple the value with 10 with power of 2 so it get placed at third last
+// So as you see we are powering 10 values by +1 for another values
+
+// For example
+// we have 3 values 4,6,3 and ans = 0;
+// so for first value we do like ans = ans + (4 * (10 * 0)) // so ans become 4
+// for second value we do like ans = ans + (6 * (10 * 1)) // so ans become 64
+// for third value we do like ans = ans + (3 * (10 * 2)) // so ans become 364
+// we do it until all our values get combined
+
+// If you want to use library Then
+// #include<cmath>
+    ans = ans + (val * (10 , pow)) // replace pow with acutal value like 1 , 2 , 3 its power of 10 okay
+
+// If you dont want to use library then
+// pow = 1; // this is 10 power of 0
+// if you want 10 power of 1
+// pow = pow * 10 so now pow become 10 which is 10 power of 1
+// if you want 10 power of 2
+// pow = pow * 10 then now pow become 100 which is 10 power of 2
+
+// Like this we can use power without applying cmath
+power = (the power which you wanted like 1 for power of zero , for power of 1 (multiple * 10) so it become 10 )
+// Like this you can increase power by one applying power * 10 to the existing value
+
+// so how we add like
+
+ans = ans + ( val * ( 10 * power))
+
+// This is how you can add values in reverse order
