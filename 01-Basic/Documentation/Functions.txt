@@ -5,6 +5,22 @@
 # You can also call functions as helpers who assigned a specific task when we have to do
   that task we call them 
 
+# Arguments are acutal values passed to a function
+# Parameters are just copy of Arguments
+
+# The Decleared Variable in function is get destroyed after function returns.
+    ( Basically Function and Variable Get destroyed from stack memory )
+
+# Their are two types of sending value 
+    1. Pass By Value
+        => The Arguments we send to function as parameters are get created copy of Arguments
+           their is no connection of both variable both get stored seperately in memory
+        => Just We Pass the values origin values still get remained as it is
+
+    2. Pass By Reference
+        => In this we will send variables address if variable get modified in function
+           then it also affects in main variable
+
 Syntax :-
 
     returnType functionName(parameters){

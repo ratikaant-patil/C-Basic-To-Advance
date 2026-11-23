@@ -1,0 +1,7 @@
+1. Their are two types of memory in cpp 
+    a] Stack Memory 
+        => 1. Stack Memory Is Static Allocated
+        => 2. Every Function is stored in stack memory which we call it stack frame
+
+    b] Heap Memory
+        => 1. Heap Memory is dynamically Allocated
