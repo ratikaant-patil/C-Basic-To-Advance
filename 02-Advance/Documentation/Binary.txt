@@ -68,3 +68,18 @@ power = (the power which you wanted like 1 for power of zero , for power of 1 (m
 ans = ans + ( val * ( 10 * power))
 
 // This is how you can add values in reverse order
+
+
+
+# Binary To Decimal
+# To get Binary to Decimal we have to calculate 2s Power from 0
+
+// Suppose we have values like 101100
+// Then we should start from backwards like 0 * 2^0
+// Then 0 * 2^1
+// Then 1 * 2^2
+// Then 1 * 2^3
+// Then 0 * 2^4
+// Then 1 * 2^5
+
+// And calculate their sum and you will get their decimal number
