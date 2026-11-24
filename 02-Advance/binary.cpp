@@ -31,7 +31,7 @@ int binaryToDeciaml(int n){
 }
 
 int main(){
-    cout << decimalToBinary(50) << endl;
+    cout << decimalToBinary(8) << endl;
     cout << binaryToDeciaml(110010) << endl;
 
     cout << binaryToDeciaml(decimalToBinary(50)) << endl;

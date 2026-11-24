@@ -1,0 +1,68 @@
+# Bitwaise Operators
+
+// Bitwise operators are programming symbols that perform operations directly on the individual binary digits (0s and 1s) of integer values.
+
+// Their are total 3 Bitwaise Operators
+// 1] Bitwise ( & ) :-
+        => Bitwise & is similar to our conditional AND
+           Where ,
+           1 & 0 => 0
+           0 & 1 => 0
+           0 & 0 => 0
+           1 & 1 => 1
+
+// 2] Bitwise ( | ) "-
+        => Bitwise ( | ) OR is similar to our conditional OR
+           where ,
+           1 | 0 => 1
+           0 | 0 => 0
+           0 | 1 => 1
+           1 | 1 => 1
+
+// 3] Bitwise ( ^ ) :-
+        => Bitwaise ( ^ ) XOR (Exclusive OR)
+           in this , Same values become 0 , Different Values become 1
+           1 ^ 1 => 0
+           1 ^ 0 => 1
+           0 ^ 1 => 1
+           0 ^ 0 => 0
+
+// 4] Bitwise ( << ) :-
+        => Bitwise ( << ) left shift operator
+           it shifts binarys values to left by given places
+           Suppose , 1001 is value and you write 
+           1001 << 2
+           Then it shift its place by 2 to left
+           100100 // you will get this outcome
+           formula is like value << places_to_shift
+           and it will ad extra zeros at empty space
+    // Important :-
+        - This will perform a backend operation like
+        a << b which also means ( ans = a * 2 power b)
+        Suppose a << b => (8 << 1) => (1000 << 1) => (10000) => 16
+        ans = ( a * 2 power b) => (8 * (2 * 1)) => (8 * 2) => 16
+    // In future you can use bitwise << for getting ( value * 2 power of anything )
+
+ 
+// 5] Bitwise ( >> ) :-
+        => Bitwise ( >> ) Right shift operator
+           it shifts binary values to right by given places
+           suppose , 1001 is value and you said
+           1001 >> 3
+           then it shift its place by 3 to right
+           so it will become 0001
+           now you think where other values gone so in bitwise Right shift
+           when values shfited to right then their are no place to store so it will remove it
+           and now values are shiffted so empty places are filled with 0
+           // For example:-
+           value = 1111
+           value >> 2
+           0011 because values shifted two places of right and as you know their is no storage to right
+           so values are lost here
+    
+    // Important :-
+    - This will perform a backend operation like
+        a >> b which also means ( ans = a / 2 power b)
+        Suppose a >> b => (8 >> 1) => (1000 >> 1) => (0100) => 4
+        ans = ( a / 2 power b) => (8 / (2 * 1)) => (8 / 2) => 4
+    // In future you can use bitwise >> for getting ( value / 2 power of anything )

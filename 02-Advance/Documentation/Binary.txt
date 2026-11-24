@@ -83,3 +83,59 @@ ans = ans + ( val * ( 10 * power))
 // Then 1 * 2^5
 
 // And calculate their sum and you will get their decimal number
+
+
+# Two' Complement ( 2's Complement )
+
+int n = 10 ( Binary :- 1010 )
+
+// To Acheive Two's Complement we have to do some steps
+// Step 1 :- 
+    => Covert That value from decimal to binary
+//  Step 2 :-
+    => Apply prefix with a 0
+
+// Suppose value is +10 then we should apply 0 to his prefix 
+// And if values is -10 then we should apply 1 to his prefix
+// So values become 01010
+// 01010 in this starting zero is known as Most significant Bit (MSB)
+// Which tells us which sign that values holds
+
+// Step 3 :-
+    => Now we need to count its 1`s complement of this values
+
+// 1`s complement means converting 0 to 1 and 1 to 0
+// So our value should look like (01010 to 10101)
+// ( 1's complement means reversing the number and We can Acheive 2's complement by just
+     adding +1 into 1's complement )
+
+// Step 4 :-
+    => Now we only add (addition) to 1 in that whole value
+        1 0 1 0 1
+    +           1
+    ----------------
+        1 0 1 1 0
+
+// Final : ( 1 0 1 1 0 ) is our final value of Two's Complement
+// If we store this in database so it would give us (-10) value
+
+
+# 2's Complement ( Binary To Decimal )
+
+int n = -10 (10110)
+// Step 1 :-
+    => First take its 1's complement then value becomes
+       ( 10110 ) => ( 01001)
+
+// Step 2 :-
+    => We should add 1 in it to get 2's complement
+        0 1 0 0 1
+    +           1
+    ---------------
+        0 1 0 1 0
+
+// So Value becomes (0 1 0 1 0) 
+// 0 is prefix but we no its negative value so we remove it
+// (1010) => 10 (Decimal)
+// As we no it is negative value so it would become -10 (digit)
+       
