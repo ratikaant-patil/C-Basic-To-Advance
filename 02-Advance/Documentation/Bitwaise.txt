@@ -66,3 +66,64 @@
         Suppose a >> b => (8 >> 1) => (1000 >> 1) => (0100) => 4
         ans = ( a / 2 power b) => (8 / (2 * 1)) => (8 / 2) => 4
     // In future you can use bitwise >> for getting ( value / 2 power of anything )
+
+
+
+# Data Type Modifiers
+// Change meaning / size of datatype
+
+// Their are total 5 types of datatypes
+
+// 1] long :-
+        => It increase size of datatype
+        => long is used for to store values >=4
+        => now normally int have 4 Bytes (32 bit) Memory 
+        => But if we assign long to int that look like
+        => long int ( now size becomes 8 Bytes (64 Bits))
+
+// 2] short :-
+        => It decresae size of datatype
+        => short is used for to store values <=2
+        => now normally int have 4 Bytes (32 bit) Memory 
+        => But if we assign short to int that look like
+        => short int ( now size becomes 2 Bytes (16 Bits))
+
+// 3] long long :-
+        => It increase size of datatype
+        => long long is used for to store values >=4
+        => now normally int have 4 Bytes (32 bit) Memory 
+        => But if we assign short to int that look like
+        => long long int ( now size becomes 8 Bytes (64 Bits))
+
+// 4] signed :-
+        => It holds positive and negative values
+        => by default all datatype are signed
+
+// 5] un-signed :-
+        => It holds only positive values
+        => if we apply it then we get 2 power of 32 values that we can store
+
+// normally int or any other datatype with 4 byte which is (64 Bits) that is 2 power of 32
+// But Can only give us to use 2 power of 31 beacuse 1 bit is used for Most significant Bit (MSB)
+// Which tells us is value is positive or negative
+// but if we assign un-signed to a variable so it only holds positive value of their is no need of MSB
+// So we get 2 power 32 and hold more value in that instead of like normal int 
+
+
+
+# Scope of variable 
+// Their are total 2 scopes of variable 
+// 1] local :-
+        the variable which we declare in a function block or any block that we call it local
+
+// 2] Global :-
+        the variable which we declare outside of any function or block is known as global variable
+
+int glob = 10; // This is global variable 
+int main(){
+    int var = 10; // This is local variable
+    return 0;
+}
+
+// You can access global variable in any block of code 
+// but you cant acces local variable outside of block
