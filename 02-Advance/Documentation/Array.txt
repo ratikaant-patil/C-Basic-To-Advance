@@ -1,0 +1,40 @@
+# Array
+
+// Arrays are holds same type of values
+// Arrays are contignous in memory which means it holds value in linear way
+// Each array index holds 4bytes
+// if you have array of size 5 then its total size of bytes is 20
+// array address is like suppose first indext holds 100 , then second index holds 104
+// Rach address increase by 4 as size
+// Array indexes starts from zero and end at size of array - 1
+
+// Synatx :-
+    datatype name[size] = {values};
+    OR
+    datatype name = {1,2,3} // Now size of array is 3 its called dynamic array
+
+// Professional Way to give array size
+    const int size = 5;
+    int arr[size];
+
+// If we give array size 5 and only assign 3 values then reamining indexes values become 0
+
+// How can we access array value
+    => Using index we can access array value
+        int arr[5] = {1,2,3,4,5}
+        cout << arr[3] << endl; // We will get 4 as on 3rd index 4 values is present
+
+
+# Pass By Reference
+// In C++ a Reference is an alternative name for an object or function ,
+// and its address is the address of the object or function it referes to.
+
+// Arrays is non-primitive datatype 
+// If we pass our origin array to a function and modify our array their 
+// then that should also reflect in our array because we are passing it as 
+// reference or in simple word we are passing its pointer to a function 
+// pointer basically shares the origin address of a variable or function
+// once we have original address of any variable we can directly modify it anywhere 
+
+
+# Linear Search
